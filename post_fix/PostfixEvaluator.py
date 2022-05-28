@@ -19,23 +19,23 @@ def main():
         line3 = []
         sum  = 0
         line2 = line.split()
-        for i in range(len(line2)):
-            if line2[i] == "-" :
+        for i in range(len(line2)): 
+            if line2[i] == "-" : #if subtraction is selected 
                 sum = int(line3[len(line3) - 2]) - int(line3[len(line3) - 1])
                 del line3[len(line3)- 2]
                 del line3[len(line3)- 1]
                 line3.append(sum)
-            elif line2[i] == "+":
+            elif line2[i] == "+": # if addition is selected 
                sum = int(line3[len(line3) - 2]) + int(line3[len(line3) - 1])
                del line3[len(line3) - 2]
                del line3[len(line3)- 1 ]
                line3.append(sum)
-            elif line2[i] == "*":
+            elif line2[i] == "*": #if multiplication is selected 
                sum = int(line3[len(line3) - 2]) * int(line3[len(line3) - 1])
                del line3[len(line3) - 2]
                del line3[len(line3)- 1 ]
                line3.append(sum)
-            elif line2[i] == "/":
+            elif line2[i] == "/": #if division is selected 
                sum = int(line3[len(line3) - 2]) / int(line3[len(line3) - 1])
                del line3[len(line3) - 2]
                del line3[len(line3)- 1 ]
